@@ -18,4 +18,5 @@ const calculateDemeritPoints = (speed) => {
   return `Demerit points: ${demeritPoints}`;
 };
 
+console.log(`Your points are ${points} demerit points`);
 console.log(calculateDemeritPoints(80));
