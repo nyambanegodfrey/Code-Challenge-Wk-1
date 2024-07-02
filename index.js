@@ -1,27 +1,32 @@
-//Prompt the user to enter the student's mark
-const mark=prompt("Please enter the student's mark(between 0 and 100):");
+//grade A>79, B>60-79, C>59-49, D>40-49, E<40//
+//prompt user to enter student grade//
 
-//validate the users input
-if (mark<0||mark>100) {
-  console.log("Invalid mark. Please enter a mark between 0 and 100.");
-} else{
-  //calculate the grade based on the mark
-  let grade;
-  if (mark>79) {
-    grade="A";
+const StudentGrade =console.log("Enter student grade");
+
+//limit the data type to parse intergers only//
+//The number must be between 0-100//
+
+const StudentGradeInt = parseInt(StudentGrade);
+
+if (StudentGrade>=0 && StudentGradeInt<=100) {
+  //naming the function
+  function gradingSystem(grade){
+    if (grade>79) {
+      return "A"
+
+    }else if (grade>=60 && grade<=79) {
+      return "B"
+
+    }else if (grade>=50 && grade<=59) {
+      return "C"
+
+    } else if (grade>=40 && grade<=49) {
+      return "D"
+
+    } else(grade<40); {
+      return "E"
+    }
+    
   }
-  else if(mark>=60){
-    grade="B";
-  }
-  else if (mark>=50) {
-    grade="C";
-  }
-  else if (mark>=40) {
-    grade="D";
-  }
-  else{
-    grade="E"
-  }  
-  console.log(`The studet\'s grade is:${grade}`);
 }
 
