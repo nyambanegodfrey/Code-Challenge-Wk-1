@@ -3,20 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Speed Detector</title>
+  <script src="./index2.js"></script>
+  <style>
+    body{
+      background-color: #2ab2f1;
+      margin: 5px;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-  
-
-
-
-
-
-
-
-
-
-
-  <script src="./index2.js"></script>
+  <p>
+    Write a program that takes the speed of a car as input e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise,
+    for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
+    </p>
+    <p>
+      > For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
+    </p>
+    <div class="container">
+    <h1>Speed Detector</h1>
+    <label for="speed">Input Car Speed :</label>
+    <input type="number" id="car-speed">
+    <input type="number" id="demeritPoints">
+    <button id="check-speed">Speed Reading</button>
+    <div id="speed-output"></div>
+</div>
 </body>
 </html>
